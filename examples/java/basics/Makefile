@@ -14,7 +14,7 @@ all: target-jar
 target-jar: pack-jar
 
 # Native target
-target-native: compile build
+target-native: compile build-native
 
 # Compile Java source files
 compile:
@@ -22,7 +22,7 @@ compile:
 	javac -d $(BUILD_DIR) $(CLASSES)
 
 # Build Jar file
-pack-jar:
+pack-jar: compile
 	jar cfe $(JAR_NAME) $(MAIN_CLASS) -C $(BUILD_DIR) .
 
 # Build native image from class files
@@ -34,11 +34,11 @@ run-native: build-native
 	./$(EXECUTABLE_NAME)
 
 # Run the Jar
-run-jar: pack-jar
+run-jar: target-jar
 	java -jar $(JAR_NAME)
 
 # Clean build artifacts
 clean:
 	rm -rf $(BUILD_DIR)/*
 	rm -f $(JAR_NAME)
-	rm -f myExecutableName
+	rm -f $(EXECUTABLE_NAME)
