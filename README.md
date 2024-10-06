@@ -1,10 +1,10 @@
 # Mehmet's Exercises to Learn Programming Languages - <br/>Extensive Programming Language Challenges
 
 Languages targeted are:
-JVM: Java, Scala, Kotlin, Groovy
-Systems: Go, Rust, V, Zig, Odin, OCaml
-Erlang: Erlang, Elixir, Gleam
-Other: Python, Lua, TypeScript, Ruby
+- `JVM`: Java, Scala, Kotlin, Groovy
+- `Systems`: Go, Rust, V, Zig, Odin, 
+- `Erlang VM`: Erlang, Elixir, Gleam
+- `Other`: Python, Lua, TypeScript, Ruby, OCaml
 
 ## 1. Basics
 
