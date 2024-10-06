@@ -6,6 +6,7 @@ public class PrimitiveTypes {
         System.out.println("Java Primitive Types:");
 
         boolean booleanValue;
+
         byte byteValue;
         char charValue;
         short shortValue;
@@ -17,20 +18,20 @@ public class PrimitiveTypes {
         double doubleValue;
 
         booleanValue = true;
-        System.out.println("boolean can be only true or false");
+        System.out.println("booleans can be only true or false");
 
         byteValue = -1;
         byteValue = 'a';
         byteValue = 1;
         byteValue = 0x1;
         byteValue = 0b00000001;
-        System.out.println("byte can be negative or positive and can be assigned char, hexadecimal or bit values");
+        System.out.println("bytes can be negative or positive and can be assigned char, hexadecimal or bit values");
 
         charValue = 1;
         charValue = 'a';
         charValue = 0b1;
         charValue = 0x1;
-        System.out.println("chars can be assigned to characters, hex and bit values");
+        System.out.println("chars can be assigned to plain values, characters, hex and bit values");
 
         shortValue = 'a';
         shortValue = 1;
@@ -64,5 +65,25 @@ public class PrimitiveTypes {
         longValue = 0xf;
         longValue = 0b1;
         System.out.println("longs behave the same as chars");
+
+        Object[] values = new Object[]{booleanValue,byteValue,charValue,shortValue,intValue, floatValue, longValue, doubleValue};
+        for (Object object : values) {
+            System.out.println(object.getClass());            
+        }
+        
+        int twoInt = 2;
+        int fiveInt = 5;
+        System.out.println(fiveInt/twoInt);
+
+        float twoFloat = 2;
+        float fiveFloat = 5;
+        System.out.println(fiveFloat/twoFloat);
+
+        String hel = "hel";
+        String lo = "lo";
+        String hello = hel + lo;
+        
+        System.out.println(hello);
+    
     }
 }
