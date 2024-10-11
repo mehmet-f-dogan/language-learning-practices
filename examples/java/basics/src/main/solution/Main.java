@@ -5,5 +5,6 @@ public class Main {
         PrimitiveTypes.run();    
         TypeConversion.run();
         FizzBuzzBazz.run(100);
+        Fibonacci.run(20);
     }
 }
