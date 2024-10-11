@@ -6,5 +6,6 @@ public class Main {
         TypeConversion.run();
         FizzBuzzBazz.run(100);
         Fibonacci.run(20);
+        //NumberGuessingGame.run();
     }
 }
