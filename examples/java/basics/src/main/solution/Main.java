@@ -7,5 +7,6 @@ public class Main {
         FizzBuzzBazz.run(100);
         Fibonacci.run(20);
         //NumberGuessingGame.run();
+        ArrayRotation.run(47);
     }
 }
