@@ -33,8 +33,8 @@ Languages targeted are:
   - **Details**: 
     - Use loops (for/while) and conditional statements.
 
-- **Exercise: Factorial Calculation**
-  - **Task**: Implement a function that calculates the factorial of a given number using both iterative and recursive approaches.
+- **Exercise: Fibonacci Calculation**
+  - **Task**: Implement a function that calculates the Fibonacci number of a given order using both iterative and recursive approaches.
   - **Details**: 
     - Validate input to ensure it’s a non-negative integer.
     - Output the result along with the time taken for each approach.
