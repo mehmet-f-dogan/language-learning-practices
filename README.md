@@ -107,28 +107,10 @@ Languages targeted are:
     - Include methods for adding and deleting items.
     - Discuss the hashing function and how collisions are resolved.
 
-### 2.3 Object-Oriented Programming
-- **Exercise: E-commerce System**
-  - **Task**: Create classes for a simple e-commerce system (Product, Cart, Order).
-  - **Details**: 
-    - Implement methods to add/remove products from the cart and place an order.
-    - Use inheritance to create specialized product types (e.g., Electronics, Clothing).
-
-- **Exercise: Shape Class Hierarchy**
-  - **Task**: Create a base class `Shape` and derive classes like `Circle`, `Rectangle`, and `Triangle`.
-  - **Details**: 
-    - Implement a method to calculate the area and perimeter in each derived class.
-    - Use polymorphism to handle different shape types.
 
 ## 3. Advanced
 
 ### 3.1 Web Development Basics
-- **Exercise: Build a Static Site**
-  - **Task**: Create a static website with multiple pages (HTML/CSS).
-  - **Details**: 
-    - Include a navigation bar and footer.
-    - Ensure the site is responsive.
-
 - **Exercise: RESTful API with Authentication**
   - **Task**: Build a RESTful API that includes user authentication (login/logout).
   - **Details**: 
@@ -141,12 +123,6 @@ Languages targeted are:
   - **Details**: 
     - Implement functions to Create, Read, Update, and Delete objects in JSON format.
     - Output the JSON to a file and read from it.
-
-- **Exercise: Nested JSON Parsing**
-  - **Task**: Write a program to parse nested JSON data and extract specific information.
-  - **Details**: 
-    - Handle various data types (arrays, objects).
-    - Return the extracted information in a user-friendly format.
 
 ### 3.3 Environment Variables
 - **Exercise: Secure Configuration**
