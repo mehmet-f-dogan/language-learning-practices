@@ -9,5 +9,6 @@ public class Main {
         //NumberGuessingGame.run();
         ArrayRotation.run(47);
         MergeSortedArrays.run();
+        UniqueElements.run();
     }
 }
