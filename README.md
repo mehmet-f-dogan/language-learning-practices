@@ -104,7 +104,7 @@ Languages targeted are:
 - **Exercise: Hash Table Implementation**
   - **Task**: Implement a basic hash table with collision handling.
   - **Details**: 
-    - Include methods for adding, retrieving, and deleting items.
+    - Include methods for adding and deleting items.
     - Discuss the hashing function and how collisions are resolved.
 
 ### 2.3 Object-Oriented Programming
