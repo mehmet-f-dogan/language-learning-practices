@@ -1,0 +1,5 @@
+# Build directory and artifacts
+build/
+
+# Native executable
+Main.main
