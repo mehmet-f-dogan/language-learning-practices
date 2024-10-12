@@ -8,5 +8,6 @@ public class Main {
         Fibonacci.run(20);
         //NumberGuessingGame.run();
         ArrayRotation.run(47);
+        MergeSortedArrays.run();
     }
 }
