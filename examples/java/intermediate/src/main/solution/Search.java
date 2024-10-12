@@ -8,10 +8,9 @@ public class Search {
         System.out.println();
         System.out.println("Java Search Algorithms:");
 
-        var size = 100000;
+        var size = 1000000;
         var numbers = Util.generateRandomArray(size);
-        var target = numbers[0];
-
+        var target = numbers[(int) (Math.random() * size)];
         Arrays.sort(numbers);
 
         linearSearch(numbers, target);

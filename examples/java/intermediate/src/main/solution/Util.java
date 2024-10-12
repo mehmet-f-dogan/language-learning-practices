@@ -8,7 +8,7 @@ public class Util {
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {
-            array[i] = random.nextInt(100); // Random integers from 0 to 99
+            array[i] = random.nextInt(size);
         }
 
         return array;
