@@ -10,5 +10,6 @@ public class Main {
         ArrayRotation.run(47);
         MergeSortedArrays.run();
         UniqueElements.run();
+        Lambdas.run();
     }
 }
