@@ -55,7 +55,6 @@ Languages targeted are:
 - **Exercise: Merge Two Sorted Arrays**
   - **Task**: Create a function that merges two sorted arrays into a single sorted array.
   - **Details**: 
-    - Handle edge cases where one or both arrays are empty.
     - Demonstrate efficiency in terms of time complexity.
 
 - **Exercise: Unique Elements**
