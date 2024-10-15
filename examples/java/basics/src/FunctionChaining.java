@@ -1,6 +1,3 @@
-package solution;
-
-
 class Value{
     private int value;
 

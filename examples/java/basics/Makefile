@@ -1,7 +1,7 @@
 # Define variables
-SRC_DIR = ./src/main
+SRC_DIR = ./src
 BUILD_DIR = ./build
-CLASSES = $(wildcard $(SRC_DIR)/*/*.java)
+CLASSES = $(wildcard $(SRC_DIR)/*.java)
 MAIN_CLASS = solution.Main
 NATIVE_IMAGE = native-image
 JAR_NAME = Basics.jar

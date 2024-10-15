@@ -1,5 +1,3 @@
-package solution;
-
 public class TypeConversion {
 
     public static void run() {

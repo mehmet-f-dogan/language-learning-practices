@@ -1,5 +1,3 @@
-package solution;
-
 public class FizzBuzzBazz {
     public static void run(int limit) {
         System.out.println();
