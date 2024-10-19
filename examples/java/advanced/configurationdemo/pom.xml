@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dev.mehmetfd</groupId>
+    <artifactId>configurationdemo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>configurationdemo</name>
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <native-image>native-image</native-image> <!-- Native image command -->
+        <executable.name>Main</executable.name> <!-- Name of the executable -->
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>dotenv-java</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                    implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>dev.mehmetfd.App</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.graalvm.nativeimage</groupId>
+                <artifactId>native-image-maven-plugin</artifactId>
+                <version>21.2.0</version> <!-- Ensure this version matches your GraalVM version -->
+                <executions>
+                    <execution>
+                        <id>build-native-image</id>
+                        <goals>
+                            <goal>native-image</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>dev.mehmetfd.App</mainClass>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <executable>${project.build.directory}/${executable.name}</executable>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>native</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+</project>
